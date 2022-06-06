@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B923E81438CC8F67C9F223C /* Pods_Cypto_Report.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB2CF6DA99117D76C58D742 /* Pods_Cypto_Report.framework */; };
+		BC23FC3E27C4A5B1002C21BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC3D27C4A5B1002C21BA /* AppDelegate.swift */; };
+		BC23FC4027C4A5B1002C21BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC3F27C4A5B1002C21BA /* SceneDelegate.swift */; };
+		BC23FC4227C4A5B1002C21BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC4127C4A5B1002C21BA /* ViewController.swift */; };
+		BC23FC4527C4A5B1002C21BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC4327C4A5B1002C21BA /* Main.storyboard */; };
+		BC23FC4727C4A5B3002C21BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC4627C4A5B3002C21BA /* Assets.xcassets */; };
+		BC23FC4A27C4A5B3002C21BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC4827C4A5B3002C21BA /* LaunchScreen.storyboard */; };
+		BC23FC5427C4A6EE002C21BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC5327C4A6EE002C21BA /* NetworkService.swift */; };
+		BC23FC5927C4A75B002C21BA /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC5727C4A75B002C21BA /* LoadingViewController.swift */; };
+		BC23FC5A27C4A75B002C21BA /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC5827C4A75B002C21BA /* LoadingViewController.xib */; };
+		BC23FC5E27C4A788002C21BA /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC5B27C4A788002C21BA /* Helpers.swift */; };
+		BC23FC5F27C4A788002C21BA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC5C27C4A788002C21BA /* Constant.swift */; };
+		BC23FC6027C4A788002C21BA /* Extension+General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC5D27C4A788002C21BA /* Extension+General.swift */; };
+		BC23FC6527C4A908002C21BA /* NewsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC6427C4A908002C21BA /* NewsBase.swift */; };
+		BC23FC6727C4A943002C21BA /* CryptoTopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC6627C4A943002C21BA /* CryptoTopList.swift */; };
+		BC23FC6927C4A95A002C21BA /* CryptoUSD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC6827C4A95A002C21BA /* CryptoUSD.swift */; };
+		BC23FC6D27C71C7D002C21BA /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC6C27C71C7D002C21BA /* Configurator.swift */; };
+		BC23FC7627C71CBE002C21BA /* NewsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7027C71CBE002C21BA /* NewsWorker.swift */; };
+		BC23FC7727C71CBE002C21BA /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7127C71CBE002C21BA /* NewsRouter.swift */; };
+		BC23FC7827C71CBE002C21BA /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7227C71CBE002C21BA /* NewsPresenter.swift */; };
+		BC23FC7927C71CBE002C21BA /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7327C71CBE002C21BA /* NewsInteractor.swift */; };
+		BC23FC7A27C71CBE002C21BA /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7427C71CBE002C21BA /* NewsController.swift */; };
+		BC23FC7B27C71CBE002C21BA /* NewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC7527C71CBE002C21BA /* NewsController.xib */; };
+		BC23FC7F27C71CD6002C21BA /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC7D27C71CD6002C21BA /* NewsCell.swift */; };
+		BC23FC8027C71CD6002C21BA /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC7E27C71CD6002C21BA /* NewsCell.xib */; };
+		BC23FC8727C71CF0002C21BA /* TopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8127C71CF0002C21BA /* TopListPresenter.swift */; };
+		BC23FC8827C71CF0002C21BA /* TopListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC8227C71CF0002C21BA /* TopListController.xib */; };
+		BC23FC8927C71CF0002C21BA /* TopListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8327C71CF0002C21BA /* TopListController.swift */; };
+		BC23FC8A27C71CF0002C21BA /* TopListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8427C71CF0002C21BA /* TopListWorker.swift */; };
+		BC23FC8B27C71CF0002C21BA /* TopListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8527C71CF0002C21BA /* TopListInteractor.swift */; };
+		BC23FC8C27C71CF0002C21BA /* TopListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8627C71CF0002C21BA /* TopListRouter.swift */; };
+		BC23FC9027C71D04002C21BA /* TopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC8E27C71D04002C21BA /* TopListCell.swift */; };
+		BC23FC9127C71D04002C21BA /* TopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC8F27C71D04002C21BA /* TopListCell.xib */; };
+		BC23FC9427C7255F002C21BA /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC9227C7255F002C21BA /* HeaderTableViewCell.swift */; };
+		BC23FC9527C7255F002C21BA /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC23FC9327C7255F002C21BA /* HeaderTableViewCell.xib */; };
+		BC23FC9827C72879002C21BA /* CustomShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC9727C72879002C21BA /* CustomShadowView.swift */; };
+		BC23FC9D27C728F6002C21BA /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC9C27C728F6002C21BA /* Extension+UILabel.swift */; };
+		BC23FC9F27C72FAC002C21BA /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FC9E27C72FAC002C21BA /* Extension+UIColor.swift */; };
+		BC23FCA127C749AB002C21BA /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FCA027C749AB002C21BA /* Extension+String.swift */; };
+		BC23FCA327C778BB002C21BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC23FCA227C778BB002C21BA /* README.md */; };
+		BC23FCA527C866CF002C21BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FCA427C866CF002C21BA /* TabBarController.swift */; };
+		BC23FCA727C869F4002C21BA /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23FCA627C869F4002C21BA /* Extension+UIImage.swift */; };
+		BC547B3927C9E448009C17A9 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC547B3727C9E448009C17A9 /* DiscoverViewController.swift */; };
+		BC547B3A27C9E448009C17A9 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC547B3827C9E448009C17A9 /* DiscoverViewController.xib */; };
+		BC547B3C27C9E48E009C17A9 /* DiscoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC547B3B27C9E48E009C17A9 /* DiscoverInteractor.swift */; };
+		BC547B3E27C9E49B009C17A9 /* DiscoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC547B3D27C9E49B009C17A9 /* DiscoverPresenter.swift */; };
+		BC547B4027C9E4AB009C17A9 /* DiscoverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC547B3F27C9E4AB009C17A9 /* DiscoverRouter.swift */; };
+		BC547B4227C9E4BA009C17A9 /* DiscoverWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC547B4127C9E4BA009C17A9 /* DiscoverWorker.swift */; };
+		BC68DE2B282A48CB00B6EFBE /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC68DE2A282A48CB00B6EFBE /* DefaultTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D657FEA614AF9DB5E3010DC /* Pods-Cypto Report.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cypto Report.release.xcconfig"; path = "Target Support Files/Pods-Cypto Report/Pods-Cypto Report.release.xcconfig"; sourceTree = "<group>"; };
+		BC23FC3A27C4A5B1002C21BA /* Cypto Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cypto Report.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC23FC3D27C4A5B1002C21BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC23FC3F27C4A5B1002C21BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC23FC4127C4A5B1002C21BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC23FC4427C4A5B1002C21BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC23FC4627C4A5B3002C21BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC23FC4927C4A5B3002C21BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC23FC4B27C4A5B3002C21BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC23FC5327C4A6EE002C21BA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BC23FC5727C4A75B002C21BA /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		BC23FC5827C4A75B002C21BA /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		BC23FC5B27C4A788002C21BA /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BC23FC5C27C4A788002C21BA /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BC23FC5D27C4A788002C21BA /* Extension+General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+General.swift"; sourceTree = "<group>"; };
+		BC23FC6427C4A908002C21BA /* NewsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBase.swift; sourceTree = "<group>"; };
+		BC23FC6627C4A943002C21BA /* CryptoTopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTopList.swift; sourceTree = "<group>"; };
+		BC23FC6827C4A95A002C21BA /* CryptoUSD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUSD.swift; sourceTree = "<group>"; };
+		BC23FC6C27C71C7D002C21BA /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		BC23FC7027C71CBE002C21BA /* NewsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsWorker.swift; sourceTree = "<group>"; };
+		BC23FC7127C71CBE002C21BA /* NewsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		BC23FC7227C71CBE002C21BA /* NewsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		BC23FC7327C71CBE002C21BA /* NewsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
+		BC23FC7427C71CBE002C21BA /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		BC23FC7527C71CBE002C21BA /* NewsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsController.xib; sourceTree = "<group>"; };
+		BC23FC7D27C71CD6002C21BA /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		BC23FC7E27C71CD6002C21BA /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		BC23FC8127C71CF0002C21BA /* TopListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListPresenter.swift; sourceTree = "<group>"; };
+		BC23FC8227C71CF0002C21BA /* TopListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopListController.xib; sourceTree = "<group>"; };
+		BC23FC8327C71CF0002C21BA /* TopListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListController.swift; sourceTree = "<group>"; };
+		BC23FC8427C71CF0002C21BA /* TopListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListWorker.swift; sourceTree = "<group>"; };
+		BC23FC8527C71CF0002C21BA /* TopListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListInteractor.swift; sourceTree = "<group>"; };
+		BC23FC8627C71CF0002C21BA /* TopListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListRouter.swift; sourceTree = "<group>"; };
+		BC23FC8E27C71D04002C21BA /* TopListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListCell.swift; sourceTree = "<group>"; };
+		BC23FC8F27C71D04002C21BA /* TopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopListCell.xib; sourceTree = "<group>"; };
+		BC23FC9227C7255F002C21BA /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BC23FC9327C7255F002C21BA /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		BC23FC9727C72879002C21BA /* CustomShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowView.swift; sourceTree = "<group>"; };
+		BC23FC9C27C728F6002C21BA /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
+		BC23FC9E27C72FAC002C21BA /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		BC23FCA027C749AB002C21BA /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		BC23FCA227C778BB002C21BA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC23FCA427C866CF002C21BA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BC23FCA627C869F4002C21BA /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		BC547B3727C9E448009C17A9 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		BC547B3827C9E448009C17A9 /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		BC547B3B27C9E48E009C17A9 /* DiscoverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverInteractor.swift; sourceTree = "<group>"; };
+		BC547B3D27C9E49B009C17A9 /* DiscoverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPresenter.swift; sourceTree = "<group>"; };
+		BC547B3F27C9E4AB009C17A9 /* DiscoverRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRouter.swift; sourceTree = "<group>"; };
+		BC547B4127C9E4BA009C17A9 /* DiscoverWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverWorker.swift; sourceTree = "<group>"; };
+		BC68DE2A282A48CB00B6EFBE /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
+		EFB2CF6DA99117D76C58D742 /* Pods_Cypto_Report.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cypto_Report.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB354346835A5D2EB383DD6 /* Pods-Cypto Report.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cypto Report.debug.xcconfig"; path = "Target Support Files/Pods-Cypto Report/Pods-Cypto Report.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC23FC3727C4A5B1002C21BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B923E81438CC8F67C9F223C /* Pods_Cypto_Report.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FE44ABA3E99FEDB1E4C0CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB2CF6DA99117D76C58D742 /* Pods_Cypto_Report.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC23FC3127C4A5B1002C21BA = {
+			isa = PBXGroup;
+			children = (
+				BC23FC3C27C4A5B1002C21BA /* Cypto Report */,
+				BC23FC3B27C4A5B1002C21BA /* Products */,
+				C93DCC585EF4D9E67D53E97C /* Pods */,
+				7FE44ABA3E99FEDB1E4C0CFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC23FC3B27C4A5B1002C21BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC3A27C4A5B1002C21BA /* Cypto Report.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC23FC3C27C4A5B1002C21BA /* Cypto Report */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FCA227C778BB002C21BA /* README.md */,
+				BC23FC5527C4A712002C21BA /* Utils */,
+				BC23FC5227C4A6D9002C21BA /* Network */,
+				BC23FC6127C4A813002C21BA /* Models */,
+				BC23FC6A27C71C43002C21BA /* Modules */,
+				BC23FC5127C4A61A002C21BA /* MainApp */,
+				BC23FC4327C4A5B1002C21BA /* Main.storyboard */,
+				BC23FC4627C4A5B3002C21BA /* Assets.xcassets */,
+				BC23FC4827C4A5B3002C21BA /* LaunchScreen.storyboard */,
+				BC23FC4B27C4A5B3002C21BA /* Info.plist */,
+			);
+			path = "Cypto Report";
+			sourceTree = "<group>";
+		};
+		BC23FC5127C4A61A002C21BA /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				BC68DE2A282A48CB00B6EFBE /* DefaultTableViewCell.xib */,
+				BC23FC3D27C4A5B1002C21BA /* AppDelegate.swift */,
+				BC23FC3F27C4A5B1002C21BA /* SceneDelegate.swift */,
+				BC23FC4127C4A5B1002C21BA /* ViewController.swift */,
+				BC23FCA427C866CF002C21BA /* TabBarController.swift */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		BC23FC5227C4A6D9002C21BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC5327C4A6EE002C21BA /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BC23FC5527C4A712002C21BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC9B27C728DB002C21BA /* Helper */,
+				BC23FC9A27C728AA002C21BA /* Extension */,
+				BC23FC9927C728A1002C21BA /* Constant */,
+				BC23FC5627C4A74E002C21BA /* Loading */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC23FC5627C4A74E002C21BA /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC5727C4A75B002C21BA /* LoadingViewController.swift */,
+				BC23FC5827C4A75B002C21BA /* LoadingViewController.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		BC23FC6127C4A813002C21BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC6327C4A8E7002C21BA /* TopList */,
+				BC23FC6227C4A8DC002C21BA /* News */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC23FC6227C4A8DC002C21BA /* News */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC6427C4A908002C21BA /* NewsBase.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		BC23FC6327C4A8E7002C21BA /* TopList */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC6627C4A943002C21BA /* CryptoTopList.swift */,
+				BC23FC6827C4A95A002C21BA /* CryptoUSD.swift */,
+			);
+			path = TopList;
+			sourceTree = "<group>";
+		};
+		BC23FC6A27C71C43002C21BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC547B4327C9E4D8009C17A9 /* Workers */,
+				BC23FC6B27C71C65002C21BA /* Configurator */,
+				BC547B3627C9E306009C17A9 /* Discover */,
+				BC23FC6F27C71C8F002C21BA /* TopList */,
+				BC23FC6E27C71C8C002C21BA /* News */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC23FC6B27C71C65002C21BA /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC6C27C71C7D002C21BA /* Configurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BC23FC6E27C71C8C002C21BA /* News */ = {
+			isa = PBXGroup;
+			children = (
+				BCCCA9792803EA9E002C2063 /* DetailNews */,
+				BC23FC7C27C71CC8002C21BA /* Cell */,
+				BC23FC7427C71CBE002C21BA /* NewsController.swift */,
+				BC23FC7527C71CBE002C21BA /* NewsController.xib */,
+				BC23FC7327C71CBE002C21BA /* NewsInteractor.swift */,
+				BC23FC7227C71CBE002C21BA /* NewsPresenter.swift */,
+				BC23FC7127C71CBE002C21BA /* NewsRouter.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		BC23FC6F27C71C8F002C21BA /* TopList */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC8D27C71CF6002C21BA /* Cell */,
+				BC23FC8327C71CF0002C21BA /* TopListController.swift */,
+				BC23FC8227C71CF0002C21BA /* TopListController.xib */,
+				BC23FC8527C71CF0002C21BA /* TopListInteractor.swift */,
+				BC23FC8127C71CF0002C21BA /* TopListPresenter.swift */,
+				BC23FC8627C71CF0002C21BA /* TopListRouter.swift */,
+			);
+			path = TopList;
+			sourceTree = "<group>";
+		};
+		BC23FC7C27C71CC8002C21BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC7D27C71CD6002C21BA /* NewsCell.swift */,
+				BC23FC7E27C71CD6002C21BA /* NewsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC23FC8D27C71CF6002C21BA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC8E27C71D04002C21BA /* TopListCell.swift */,
+				BC23FC8F27C71D04002C21BA /* TopListCell.xib */,
+				BC23FC9227C7255F002C21BA /* HeaderTableViewCell.swift */,
+				BC23FC9327C7255F002C21BA /* HeaderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC23FC9927C728A1002C21BA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC5C27C4A788002C21BA /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		BC23FC9A27C728AA002C21BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC5D27C4A788002C21BA /* Extension+General.swift */,
+				BC23FC9C27C728F6002C21BA /* Extension+UILabel.swift */,
+				BC23FC9E27C72FAC002C21BA /* Extension+UIColor.swift */,
+				BC23FCA027C749AB002C21BA /* Extension+String.swift */,
+				BC23FCA627C869F4002C21BA /* Extension+UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BC23FC9B27C728DB002C21BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC9727C72879002C21BA /* CustomShadowView.swift */,
+				BC23FC5B27C4A788002C21BA /* Helpers.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BC547B3627C9E306009C17A9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				BC547B3727C9E448009C17A9 /* DiscoverViewController.swift */,
+				BC547B3827C9E448009C17A9 /* DiscoverViewController.xib */,
+				BC547B3B27C9E48E009C17A9 /* DiscoverInteractor.swift */,
+				BC547B3D27C9E49B009C17A9 /* DiscoverPresenter.swift */,
+				BC547B3F27C9E4AB009C17A9 /* DiscoverRouter.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		BC547B4327C9E4D8009C17A9 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				BC23FC8427C71CF0002C21BA /* TopListWorker.swift */,
+				BC23FC7027C71CBE002C21BA /* NewsWorker.swift */,
+				BC547B4127C9E4BA009C17A9 /* DiscoverWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		BCCCA9792803EA9E002C2063 /* DetailNews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailNews;
+			sourceTree = "<group>";
+		};
+		C93DCC585EF4D9E67D53E97C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCB354346835A5D2EB383DD6 /* Pods-Cypto Report.debug.xcconfig */,
+				5D657FEA614AF9DB5E3010DC /* Pods-Cypto Report.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC23FC3927C4A5B1002C21BA /* Cypto Report */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC23FC4E27C4A5B3002C21BA /* Build configuration list for PBXNativeTarget "Cypto Report" */;
+			buildPhases = (
+				971B623CAA0E0C8F3E8CBAFF /* [CP] Check Pods Manifest.lock */,
+				BC23FC3627C4A5B1002C21BA /* Sources */,
+				BC23FC3727C4A5B1002C21BA /* Frameworks */,
+				BC23FC3827C4A5B1002C21BA /* Resources */,
+				0E4ED0E4DF0F4492733E35AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cypto Report";
+			productName = "Cypto Report";
+			productReference = BC23FC3A27C4A5B1002C21BA /* Cypto Report.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC23FC3227C4A5B1002C21BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					BC23FC3927C4A5B1002C21BA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = BC23FC3527C4A5B1002C21BA /* Build configuration list for PBXProject "Cypto Report" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC23FC3127C4A5B1002C21BA;
+			productRefGroup = BC23FC3B27C4A5B1002C21BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC23FC3927C4A5B1002C21BA /* Cypto Report */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC23FC3827C4A5B1002C21BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC23FCA327C778BB002C21BA /* README.md in Resources */,
+				BC23FC8027C71CD6002C21BA /* NewsCell.xib in Resources */,
+				BC23FC9527C7255F002C21BA /* HeaderTableViewCell.xib in Resources */,
+				BC23FC4A27C4A5B3002C21BA /* LaunchScreen.storyboard in Resources */,
+				BC68DE2B282A48CB00B6EFBE /* DefaultTableViewCell.xib in Resources */,
+				BC23FC4727C4A5B3002C21BA /* Assets.xcassets in Resources */,
+				BC23FC7B27C71CBE002C21BA /* NewsController.xib in Resources */,
+				BC23FC4527C4A5B1002C21BA /* Main.storyboard in Resources */,
+				BC547B3A27C9E448009C17A9 /* DiscoverViewController.xib in Resources */,
+				BC23FC8827C71CF0002C21BA /* TopListController.xib in Resources */,
+				BC23FC5A27C4A75B002C21BA /* LoadingViewController.xib in Resources */,
+				BC23FC9127C71D04002C21BA /* TopListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E4ED0E4DF0F4492733E35AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cypto Report/Pods-Cypto Report-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cypto Report/Pods-Cypto Report-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cypto Report/Pods-Cypto Report-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		971B623CAA0E0C8F3E8CBAFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cypto Report-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC23FC3627C4A5B1002C21BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC23FC7627C71CBE002C21BA /* NewsWorker.swift in Sources */,
+				BC23FC9427C7255F002C21BA /* HeaderTableViewCell.swift in Sources */,
+				BC23FC6927C4A95A002C21BA /* CryptoUSD.swift in Sources */,
+				BC23FCA527C866CF002C21BA /* TabBarController.swift in Sources */,
+				BC23FC8B27C71CF0002C21BA /* TopListInteractor.swift in Sources */,
+				BC23FC9027C71D04002C21BA /* TopListCell.swift in Sources */,
+				BC23FC8A27C71CF0002C21BA /* TopListWorker.swift in Sources */,
+				BC23FC9D27C728F6002C21BA /* Extension+UILabel.swift in Sources */,
+				BC23FC6727C4A943002C21BA /* CryptoTopList.swift in Sources */,
+				BC23FC9827C72879002C21BA /* CustomShadowView.swift in Sources */,
+				BC23FC5F27C4A788002C21BA /* Constant.swift in Sources */,
+				BC23FC4227C4A5B1002C21BA /* ViewController.swift in Sources */,
+				BC23FC8927C71CF0002C21BA /* TopListController.swift in Sources */,
+				BC23FC6D27C71C7D002C21BA /* Configurator.swift in Sources */,
+				BC23FC3E27C4A5B1002C21BA /* AppDelegate.swift in Sources */,
+				BC547B3C27C9E48E009C17A9 /* DiscoverInteractor.swift in Sources */,
+				BC547B4227C9E4BA009C17A9 /* DiscoverWorker.swift in Sources */,
+				BC23FC7927C71CBE002C21BA /* NewsInteractor.swift in Sources */,
+				BC23FC7727C71CBE002C21BA /* NewsRouter.swift in Sources */,
+				BC23FCA727C869F4002C21BA /* Extension+UIImage.swift in Sources */,
+				BC23FC5927C4A75B002C21BA /* LoadingViewController.swift in Sources */,
+				BC23FC7F27C71CD6002C21BA /* NewsCell.swift in Sources */,
+				BC23FC5427C4A6EE002C21BA /* NetworkService.swift in Sources */,
+				BC547B3927C9E448009C17A9 /* DiscoverViewController.swift in Sources */,
+				BC23FC8727C71CF0002C21BA /* TopListPresenter.swift in Sources */,
+				BC23FC4027C4A5B1002C21BA /* SceneDelegate.swift in Sources */,
+				BC547B4027C9E4AB009C17A9 /* DiscoverRouter.swift in Sources */,
+				BC23FC8C27C71CF0002C21BA /* TopListRouter.swift in Sources */,
+				BC23FC7A27C71CBE002C21BA /* NewsController.swift in Sources */,
+				BC547B3E27C9E49B009C17A9 /* DiscoverPresenter.swift in Sources */,
+				BC23FC9F27C72FAC002C21BA /* Extension+UIColor.swift in Sources */,
+				BC23FC5E27C4A788002C21BA /* Helpers.swift in Sources */,
+				BC23FC7827C71CBE002C21BA /* NewsPresenter.swift in Sources */,
+				BC23FC6527C4A908002C21BA /* NewsBase.swift in Sources */,
+				BC23FC6027C4A788002C21BA /* Extension+General.swift in Sources */,
+				BC23FCA127C749AB002C21BA /* Extension+String.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC23FC4327C4A5B1002C21BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC23FC4427C4A5B1002C21BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC23FC4827C4A5B3002C21BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC23FC4927C4A5B3002C21BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC23FC4C27C4A5B3002C21BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC23FC4D27C4A5B3002C21BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC23FC4F27C4A5B3002C21BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB354346835A5D2EB383DD6 /* Pods-Cypto Report.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9QGC4444X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cypto Report/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeri.app.Cypto-Report";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC23FC5027C4A5B3002C21BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D657FEA614AF9DB5E3010DC /* Pods-Cypto Report.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G9QGC4444X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cypto Report/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeri.app.Cypto-Report";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC23FC3527C4A5B1002C21BA /* Build configuration list for PBXProject "Cypto Report" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC23FC4C27C4A5B3002C21BA /* Debug */,
+				BC23FC4D27C4A5B3002C21BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC23FC4E27C4A5B3002C21BA /* Build configuration list for PBXNativeTarget "Cypto Report" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC23FC4F27C4A5B3002C21BA /* Debug */,
+				BC23FC5027C4A5B3002C21BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC23FC3227C4A5B1002C21BA /* Project object */;
+}
